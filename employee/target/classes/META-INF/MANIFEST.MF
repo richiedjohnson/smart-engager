@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: employee
+Implementation-Version: 0.0.1-beta
+Built-By: richie
+Implementation-Vendor-Id: com.rj.smartengager
+Build-Jdk: 1.8.0_121
+Implementation-URL: http://projects.spring.io/spring-boot/smartengager
+ /employee/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
