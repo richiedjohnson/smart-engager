@@ -1,4 +1,4 @@
-package com.rj.smartengager.model;
+package com.rj.se.emp.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

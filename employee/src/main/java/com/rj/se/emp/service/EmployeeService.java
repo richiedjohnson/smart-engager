@@ -1,8 +1,8 @@
-package com.rj.smartengager.service;
+package com.rj.se.emp.service;
 
 import org.springframework.stereotype.Service;
 
-import com.rj.smartengager.model.Employee;
+import com.rj.se.emp.model.Employee;
 
 @Service
 public class EmployeeService {

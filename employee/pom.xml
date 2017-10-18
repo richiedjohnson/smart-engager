@@ -8,14 +8,11 @@
 		<artifactId>smartengager</artifactId>
 		<version>0.0.1</version>
 	</parent>
-	<groupId>com.rj.smartengager</groupId>
+	<groupId>com.rj.se</groupId>
 	<artifactId>employee</artifactId>
 	<version>0.0.1-beta</version>
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
-		<camel.version>2.19.3</camel.version>
+		<start-class>com.rj.se.emp.App</start-class>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -48,6 +45,16 @@
 			<version>${camel.version}</version>
 		</dependency>
 		<dependency>
+			<groupId>com.rj.se</groupId>
+			<artifactId>commons</artifactId>
+			<version>0.0.1-beta</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-consul</artifactId>
+			<version>${camel.version}</version>
+		</dependency>
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
@@ -70,6 +77,16 @@
 					</annotationProcessorPaths>
 				</configuration>
 			</plugin>
+			<!-- For building Fat jar -->
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.0.2</version>
+			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
@@ -81,7 +98,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<mainClass>com.rj.smartengager.App</mainClass>
+					<mainClass>${start-class}</mainClass>
 				</configuration>
 			</plugin>
 		</plugins>
