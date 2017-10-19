@@ -11,5 +11,10 @@ service:
   port: 8100
 
 consul:
-  host: 127.0.0.1
+  host: docker.for.mac.localhost
   port: 8500
+  
+exposed:
+  service: 
+    name: Employee
+  

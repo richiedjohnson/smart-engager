@@ -1,4 +1,4 @@
-package com.rj.se.emp.model;
+package com.rj.se.commons.emp.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

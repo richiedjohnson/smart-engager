@@ -4,20 +4,22 @@
 	<parent>
 		<groupId>com.rj</groupId>
 		<artifactId>smartengager</artifactId>
-		<version>0.0.1</version>
+		<version>0.0.1-RELEASE</version>
 	</parent>
 	<groupId>com.rj.se</groupId>
 	<artifactId>commons</artifactId>
-	<version>0.0.1-beta</version>
 	<dependencies>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<scope>compile</scope>
 		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>

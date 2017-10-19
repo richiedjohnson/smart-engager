@@ -1,15 +1,12 @@
 package com.rj.se.emp;
 
-import org.apache.camel.Exchange;
-import org.apache.camel.ShutdownRunningTask;
 import org.apache.camel.builder.RouteBuilder;
-import org.apache.camel.model.dataformat.JsonLibrary;
 import org.apache.camel.model.rest.RestBindingMode;
 import org.apache.camel.model.rest.RestParamType;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import com.rj.se.emp.model.Employee;
+import com.rj.se.commons.emp.model.Employee;
 
 @Component
 public class EmployeeRoute extends RouteBuilder {

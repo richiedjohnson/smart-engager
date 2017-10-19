@@ -6,11 +6,10 @@
 	<parent>
 		<groupId>com.rj</groupId>
 		<artifactId>smartengager</artifactId>
-		<version>0.0.1</version>
+		<version>0.0.1-RELEASE</version>
 	</parent>
 	<groupId>com.rj.se</groupId>
 	<artifactId>employee</artifactId>
-	<version>0.0.1-beta</version>
 	<properties>
 		<start-class>com.rj.se.emp.App</start-class>
 	</properties>
@@ -47,7 +46,7 @@
 		<dependency>
 			<groupId>com.rj.se</groupId>
 			<artifactId>commons</artifactId>
-			<version>0.0.1-beta</version>
+			<version>0.0.1-RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.camel</groupId>
